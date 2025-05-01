@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro e Reflorestamento</title>
+  <link rel="stylesheet" href="/CSS/cadastro_login.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Registro de Usuário</h2>
+    <form id="formulario">
+      <input type="text" id="usuario" placeholder="Usuário" required /><br /><br>
+      <input type="password" id="senha" placeholder="Senha" required /><br /><br>
+      <div id="radio-grup">
+        <label><input type="radio" name="arvore" value="pau-brasil" checked /> Pau-Brasil</label><br />
+        <label><input type="radio" name="arvore" value="castanheira" /> Castanheira</label><br />
+        <label><input type="radio" name="arvore" value="peroba-rosa" /> Peroba-Rosa</label><br />
+      </div><br>
+      <input type="number" id="numero" placeholder="Número de árvores plantadas" required /><br /><br />
+      <label for="arvore">Escolha uma espécie de árvore:</label><br />
+      <select id="arvore" required>
+        <option value="nenhum">Nenhum</option>
+        <option value="ipes">Ipês</option>
+        <option value="angicos">Angicos</option>
+        <option value="aroeiras">Aroeiras</option>
+        <option value="jequiibas">Jequitibás</option>
+        <option value="perobaDoCampo">Peroba do campo</option>
+      </select><br /><br />
+
+      <button type="submit" id="botao">Registrar</button>
+    </form>
+
+    <div id="mensagem"></div>
+    <br />
+    <p>Já tem uma conta? <a href="tela_de_login.html">Faça login</a></p>
+  </div>
+
+  <script src="/JS/tela_de_cadastro.js"></script>
+</body>
+</html>
